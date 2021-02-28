@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+    border: 4px solid black;
+    background: #25291C;
+    color: white;
+}
+
+body {
+    background: #E6E49F;
+}
+
+footer {
+    background: #25291C;
+    color: white;
+    text-align: center;
+    padding: 5px; 
+}
+
+/* normal link, unvisited*/
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: green;
+}
+
+/* each alphabet styling */
+section h2 {
+    border: 4px solid black;
+    padding-left: 10px;
+    background: #6B654B;
+    color: white;
+    position: sticky;
+    top: -1px;
+}
