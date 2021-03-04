@@ -1,0 +1,30 @@
+html {
+    background-image: url('https://images.unsplash.com/photo-1613070248260-6e107a131c21?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80');
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: 2px solid orange;
+    width: 100px;
+    height: 40px;
+    background: black;
+    color: orange;
+}
+
+button:hover {
+    border: 2px solid yellow;
+    color: white;
+    box-shadow: 0px 3px 5px yellow;
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: all 0.8s;
+}
