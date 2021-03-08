@@ -1,0 +1,116 @@
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+nav {
+    padding: 5px;
+    background: #23395B;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 625px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+}
+
+span {
+    padding: 10px;
+}
+
+span:hover {
+    background: #406E8E;
+    cursor: pointer;
+}
+
+
+footer {
+    background: #2D3A3A;
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin: 5px;
+}
+
+.cardItem {
+    border: 5px solid black;
+    text-align: center;
+}
+
+.slider {
+    margin: 5px auto;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+.photo {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    animation: round 15s infinite;
+    opacity: 0;
+}
+
+@keyframes round {
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+.slider img:nth-child(4) {
+    animation-delay: 0s;
+}
+
+.slider img:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.slider img:nth-child(2) {
+    animation-delay: 9s;
+}
+
+.slider img:nth-child(1) {
+    animation-delay: 12s;
+}
+
+figure img {
+    width: 100%;
+    height: 300px;
+}
+
+.cardItem:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
